@@ -9,6 +9,6 @@ How to use: compile encrypt.c using C compiler.
             
 Functionallity: can be used by two machines to send sensitive messages between eachother.
                 any intercepted messages would only appear as a string on random 
-                itegers, but when plugged into the program again with the correct key will produce the original string
+                integers, but when plugged into the program again with the correct key will produce the original string
                 
                 
