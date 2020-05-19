@@ -1,5 +1,7 @@
-# encryption-program
-#Alex Carlucci
+# StringEncryption_IN_C
+
+## encryption-program
+## Alex Carlucci 
 
 Purpose: to encrypt or small strings unig a Key value:
 
