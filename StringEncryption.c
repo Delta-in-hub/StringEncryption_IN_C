@@ -90,11 +90,11 @@ void EncryptString(const unsigned char *string, int *code)
     unsigned char input[MAX_BUF];
     strcpy(input, string);
     strcat(input, "\n");
-    int i, key = 10;
+    int i;
     unsigned char out;
     for (i = 0; i < strlen(input) - 1; i++)
     {
-        out = encode(input[i], key, i);
+        out = encode(input[i], yourkey, i);
         code[i] = out;
     }
     code[i] = -1;
@@ -102,13 +102,13 @@ void EncryptString(const unsigned char *string, int *code)
 
 void DecryptString(const int *code, char *string)
 {
-    int i, key = 10;
+    int i;
     unsigned char out;
     for (i = 0; i >= 0; i++)
     {
         if (code[i] == -1)
             break;
-        out = encode(code[i], key, i);
+        out = encode(code[i], yourkey, i);
         string[i] = out;
     }
     string[i] = 0;
