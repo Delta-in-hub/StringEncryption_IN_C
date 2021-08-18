@@ -14,8 +14,11 @@ Functionallity: can be used by two machines to send sensitive messages between e
                 integers, but when plugged into the program again with the correct key will produce the original string
                 
               
+
 ~~~
 gcc test1.c StringEncryption.c -o something
 ./something
 1
 ~~~
+
+2021/08/18
